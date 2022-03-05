@@ -9,9 +9,6 @@ const app = Vue.createApp({
     }
   }, 
   methods: {
-    logValue() {
-      console.log(this.question1);
-    }, 
     checkStatus() {
       console.log(`${this.question1} - ${this.question2} - ${this.question3} - ${this.question4}`)
       if (!this.question1) {
