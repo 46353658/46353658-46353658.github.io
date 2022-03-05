@@ -5,7 +5,10 @@ const app = Vue.createApp({
       question1: false,
       question2: false,
       question3: false,
-      coachabilityResult: ''
+      coachabilityResult: '',
+      question1text: 'You are choosing counseling for yourself',
+      question2text: 'You believe that your own decisions fully impact your reality',
+      question3text: 'You are willing to make time for yourself daily'
     }
   }, 
   methods: {

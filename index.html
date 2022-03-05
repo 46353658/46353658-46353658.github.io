@@ -219,30 +219,27 @@
     
     <!-- Coachability section-->
     <section id="coachability">
-            <div class="col-lg-12 text-center">
-                <h2>{{ text }}</h2>
-                <br>
+        <div class="col-lg-12 text-center">
+            <h2>{{ text }}</h2>
+            <br>
+        </div>
+        <div class="container">
+            <div class="checkbox">
+                <label><input type="checkbox" v-model="question1" value="">{{ question1text }}</label>
             </div>
-            <div class="container">
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" v-model="question1" class="custom-control-input" id="defaultUnchecked">
-                    <label class="custom-control-label" for="defaultUnchecked">You are choosing counseling for yourself</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" v-model="question2" class="custom-control-input" id="defaultUnchecked">
-                    <label class="custom-control-label" for="defaultUnchecked">You believe that your own decisions fully impact your reality</label>
-                </div>
-                <div class="custom-control custom-checkbox">
-                    <input type="checkbox" v-model="question3" class="custom-control-input" id="defaultUnchecked">
-                    <label class="custom-control-label" for="defaultUnchecked">You are willing to make time for yourself daily</label>
-                </div>
-                <br>
-                <button class="btn btn-dark btn-lg toggle" @click="checkStatus">Check Status</button>
-                <br>
-                <br>
-                <br>
-                <p>{{ coachabilityResult }}</p>
-            </div>
+            <div class="checkbox">
+                <label><input type="checkbox" v-model="question2" value="">{{ question2text }}</label>
+            </div>  
+            <div class="checkbox">
+                <label><input type="checkbox" v-model="question3" value="">{{ question3text }}</label>
+            </div>  
+            <br>
+            <button class="btn btn-dark btn-lg toggle" @click="checkStatus">Check Status</button>
+            <br>
+            <br>
+            <br>
+            <p>{{ coachabilityResult }}</p>
+        </div>
     </section>
 
     <!-- Call to Action -->
