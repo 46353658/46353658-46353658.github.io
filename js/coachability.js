@@ -13,7 +13,6 @@ const app = Vue.createApp({
   }, 
   methods: {
     checkStatus() {
-      console.log(`${this.question1} - ${this.question2} - ${this.question3} - ${this.question4}`)
       if (!this.question1) {
         this.coachabilityResult = 'You have to choose counseling yourself, do not force yourself nor your loved ones into something they are not ready for';
       } else if (!this.question2) {
